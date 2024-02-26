@@ -5,7 +5,7 @@ A CLI game - Who wants to be a millionare?
 ## Take the Quiz
 
 ```
-npm i cli-game-teewrath
+npx cli-game-teewrath
 ```
 
 ## Packages Used
