@@ -31,9 +31,9 @@ async function handleAnswer(isCorrect) {
     await sleep();
   
     if (isCorrect) {
-      spinner.success({ text: `Nice work ${playerName}. That's a legit answer` });
+      spinner.success({ text: `Nice work ${player}. That's a legit answer` });
     } else {
-      spinner.error({ text: `💀💀💀 Game over, you lose ${playerName}!` });
+      spinner.error({ text: `💀💀💀 Game over, you lose ${player}!` });
       process.exit(1);
     }
   }
@@ -53,7 +53,7 @@ async function askName(){
 
 function winner() {
     console.clear();
-    figlet(`Congrats , ${playerName} !\n $ 1 , 0 0 0 , 0 0 0`, (err, data) => {
+    figlet(`Congrats , ${player} !\n $ 1 , 0 0 0 , 0 0 0`, (err, data) => {
       console.log(gradient.pastel.multiline(data) + '\n');
   
       console.log(
